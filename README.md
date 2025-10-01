@@ -1,4 +1,5 @@
-Candidate Tasks
+```
+#CANDIDATE TASK
 
 # app.py
 import os
@@ -227,3 +228,4 @@ async def leaderboard(limit: int = 10, db: AsyncSession = Depends(get_db)):
     # store cache for short time
     await redis.set("leaderboard:top", str(rows), ex=60)  # 60s cache
     return {"source": "db", "data": rows}
+```
